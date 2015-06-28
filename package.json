@@ -1,0 +1,30 @@
+{
+  "name": "image-database",
+  "version": "1.0.0",
+  "description": "An image querying library based on filenames and folders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amaurer/image-database.git"
+  },
+  "keywords": [
+    "Image",
+    "database",
+    "filename",
+    "folder",
+    "query",
+    "find"
+  ],
+  "author": "maurerdotme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amaurer/image-database/issues"
+  },
+  "homepage": "https://github.com/amaurer/image-database",
+  "dependencies": {
+    "walk": "^2.3.9"
+  }
+}
