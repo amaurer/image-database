@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/amaurer/image-database",
   "dependencies": {
+    "title-case": "^1.1.1",
     "walk": "^2.3.9"
   }
 }
