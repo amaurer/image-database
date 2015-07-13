@@ -1,6 +1,6 @@
 {
   "name": "image-database",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An image querying library based on filenames and folders.",
   "main": "lib/image-database.js",
   "scripts": {
