@@ -2,7 +2,7 @@
 
 var IDB = require("./lib/image-database.js")
 
-var idb = new IDB("./tests", function(e, collection){
-	console.log("doner")
-	console.log(collection.tests)
+var idb = new IDB("./test", "_", function(e, collection){
+	if(e) console.error(e)
+	console.log(collection.test.images.more.hugo)
 })

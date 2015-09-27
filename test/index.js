@@ -1,15 +1,21 @@
 
-var mainExecPath = "../lib/image-database.js"
 var assert = require("assert")
 
 describe("Instantiation", function(){
 
-	var IDB = require(mainExecPath)
+	var IDB = require("../lib/image-database.js")
 
-	it("Should find three objects", function(done){
-		var idb = new IDB("../test/images", function(e, collection){
-			console.log(e, collection)
-			assert.equal(collection, 2)
+	it("should not have empty object", function(done){
+		var idb = new IDB("./test", null, function(e, collection){
+			if(e) console.error(e)
+			console.log("Collection Output")
+			if(collection.test != undefined && collection.test.images != undefined){
+				console.log(collection.test.images)
+			} else {
+				console.log(collection)
+			}
+			assert.equal(e, null, "Should not be any errors")
+			assert.notEqual(collection, {}, "Should not be an empty object")
 			done()
 		})
 	})
@@ -17,3 +23,4 @@ describe("Instantiation", function(){
 })
 
 
+// Hugo-Queen_67Wx88.5Lx80.5H|Cal King 78Wx92Lx80.5H|Eastern King 82Wx88.5Lx80.5H
